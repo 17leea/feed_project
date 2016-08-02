@@ -45,6 +45,14 @@ li.dropdown {
     display: inline-block;
 }
 
+li.logo {
+    height:140px;
+    display:block;
+    width:215px;
+    margin-top:-61px;
+    padding: 0;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -72,6 +80,61 @@ li.dropdown {
     ul.topnav li {float: none;}
 }
 
+body {  
+    font-family:Helvetica, Arial, Century;
+    font-size:12px;
+    margin:0;
+    background: url('images/bluebg.jpg');
+    background-repeat:repeat-x;
+    background-position:top;
+    margin-top:90px;
+}
+
+
+#header {
+    background-color:#ffd727;
+    height:40px;
+    margin:auto;
+}
+
+
+#header ul {
+        margin:0 auto;
+        width:800px;
+        padding:12px;
+    list-style: none;
+}
+
+#header li {
+  float: left;
+}
+
+#header a {
+    padding:0 14px;
+    text-align:center;
+  display:block;    
+}    
+
+    
+#header ul li a.logo {
+	background-image: "logo.jpg";
+    height:140px;
+    display:block;
+    width:215px;
+    margin-top:-61px;
+    padding: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+     content: "";
+  clear: both;
+  display: table;
+}
+
 </style>
 </head>
    
@@ -85,9 +148,11 @@ li.dropdown {
       <a href="#">By Location</a>
       <a href="#">Content</a>
     </div>
+<li><a class="logo" href="index.html"></a></li>
+	  
   <li class="right"><a href="#about">About</a></li>
 </ul>
    
 <body>
-
+<img src="logo.png" alt="Logo image" style="width:300px;height:150px;">
 </body>
