@@ -11,9 +11,9 @@ function Dish(title, imageURL, description, ingredients, price) {
 // A list of all dishes.
 var dishes = [
     // Each of these lines of code makes a new dish object from the dish class
-    new dish("Ramen Noodles", "images/ramen.jpeg", "Yummy!", "Gluten Free.", 12.99),
-    new dish("Chocolate Cake", "images/cake.jpeg", "Not good at all!", "Vegetarian", 6.00),
-    new dish("Baked Ziti", "images/bakedziti.jpeg", "The best thing ever!", "Vegan", 4.00),
+    new dish("Ramen Noodles", "ramen.jpeg", "Yummy!", "Gluten Free.", 12.99),
+    new dish("Chocolate Cake", "cake.jpeg", "Not good at all!", "Vegetarian", 6.00),
+    new dish("Baked Ziti", "bakedziti.jpeg", "The best thing ever!", "Vegan", 4.00),
 //    new dish(),
 //    new dish(),
 //    new dish(),
@@ -32,17 +32,6 @@ function showdishes(dishes) {
         if(i%3==0) {
             $(" #dishes ").append("<div class='row'></div>"); // A jQuery method to add a new row for every 3rd dish
         }
-
-        // This string is the HTML that makes up each individual dish cell,
-        // It uses dish[i] attributes so that each cell has unique information
-        var dishHTML = "<div class='col-md-4 dish'>" +
-            "<img class='dishimage' src='" + dishes[i].imageURL + "' />" +
-            "<h3 class='dishname'>" + dishes[i].title + " (" + dishes[i].price + ")</h3>" +
-            "<p class='description'>" + dishes[i].description + "</p>";
-
-        $(" #dishes .row:last-child").append(dishHTML); // A jQuery method that adds the new HTML string to the last row in the dishes div
-
-        if(i%3==2) { $(" #dishes ").append("</div>"); }
 
     }
 }
