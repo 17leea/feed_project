@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>feed</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="sort_menu_js.js" type="text/javascript"></script>
+<style>
+  body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fffff;
+}
+
+.dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #f2e6ff;}
+
+ul.topnav li a.active {background-color: #b066ff;}
+
+ul.topnav li.right {float: right;}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #a34dff;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+li.logo {
+    height:140px;
+    display:block;
+    width:215px;
+    margin-top:-61px;
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+body {  
+    font-family:Helvetica, Arial, Century;
+    font-size:12px;
+    margin:0;
+    background: url('images/bluebg.jpg');
+    background-repeat:repeat-x;
+    background-position:top;
+    margin-top:90px;
+}
+
+
+#header {
+    background-color:#ffd727;
+    height:40px;
+    margin:auto;
+}
+
+
+#header ul {
+        margin:0 auto;
+        width:800px;
+        padding:12px;
+    list-style: none;
+}
+
+#header li {
+  float: left;
+}
+
+#header a {
+    padding:0 14px;
+    text-align:center;
+  display:block;    
+}    
+
+    
+#header ul li a.logo {
+	background-image: "logo.jpg";
+    height:140px;
+    display:block;
+    width:215px;
+    margin-top:-61px;
+    padding: 0;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+     content: "";
+  clear: both;
+  display: table;
+}
+
+#logo { float: left; }
+
+#nav
+     {
+      background: url(http://4.bp.blogspot.com/-dVtgikk-kOY/UprtswP0yGI/AAAAAAAADag/Og0DtZ8t_oQ/s1600/header+base.png) no-repeat scroll top left;     background-color: none;
+     width: 1500px;
+     height:66px;
+      box-shadow: 0px 1px 10px #5E5E5E;
+      position:fixed;
+      top:0px;
+    }
+
+.title
+ {
+display:none;
+ color:#EDEDED;
+ font-family:verdana;
+ font-size:25px;
+ width:350px;
+ margin-top:6px;
+ margin-left:150px;
+ font-weight:bold;
+ float:left;
+}
+
+
+.navigation
+{
+ list-style-type:none; 
+    float: left;
+}
+
+
+li 
+{ 
+
+display:inline;
+ padding:15px;
+ }
+#nav a
+{
+font-size: 1.6em;
+text-transform: uppercase;
+text-shadow: 0 0 0.3em #464646;
+ font-weight: bold;
+ font-family:century gothic;
+  text-decoration:none;
+ color:#262626;
+ opacity:0.26;
+} 
+ #nav a:hover 
+{
+opacity:0.36;
+}
+
+</style>
+</head>
+<<<<<<< HEAD
+<body>
+   
+=======
+
+>>>>>>> ca76185dcd692d8371cc2d99dd9c7c78992f7b71
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+<a href="#" class="dropbtn">Sort By...</a>
+   <div class="dropdown-content">
+      <a href="#" onclick="sortButtonClicked('low-to-high')">Price - Low to High</a>
+      <a href="#" onclick="sortButtonClicked('high-to-low')">Price - High to Low</a> 
+	  <a href="#" onclick="sortButtonClicked('shuffle')">Shuffle!</a>
+	  <a href="#"> Location</a>	  
+	<div class="dropdown-content"> 
+	  <a href="#">Gluten Free</a>
+	  <a href="#">Dairy Free</a>
+	  <a href="#">Vegan</a>
+	  <a href="#">Vegetarian</a>
+<<<<<<< HEAD
+    </div>	
+	
+  <li class="right"><a href="#about">About</a></li>
+</ul>
+ 
+</body>
+</html>
+=======
+    </div>
+<li><a class="logo" href="index.html"></a></li>
+	  
+  <li class="right"><a href="#about">About</a></li>
+</ul>
+   
+<body>
+<img src="logofeed.jpeg" alt="Logo image" style="width:302px;height:219px;">
+
+<div id="dishes">
+
+</div>
+
+</body>	
+</html>
+>>>>>>> ca76185dcd692d8371cc2d99dd9c7c78992f7b71

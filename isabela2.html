@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+ <html>
+<head>
+  <title>feed</title>
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<style>
+
+body {margin: 0;}
+
+ul.topnav {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fffff;
+}
+
+#nav a
+{
+    font-family: 'Muli', serif;
+	font-size: 30px;
+	display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropbtn {
+	display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li {float: left;}
+
+
+ul.topnav li a.active {background-color: #fb6107;}
+
+ul.topnav li.right {float: right;}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffba49;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+#logo { 
+float: left; 
+height: 70px;
+}
+
+.dropdown-content {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#nav a:hover 
+{
+opacity:1.0;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+</style>
+</head>
+<div id='nav'>
+<ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li class="dropdown">
+<a href="#" class="dropbtn">Sort By...</a>
+   <div class="dropdown-content">
+      <a href="#">Price - Low to High</a>
+      <a href="#">Price - High to Low</a>
+      <a href="#">Location</a> 	  
+	<div class="dropdown-content"> 
+	  <a href="#">Gluten Free</a>
+	  <a href="#">Dairy Free</a>
+	  <a href="#">Vegan</a>
+	  <a href="#">Vegetarian</a>
+    </div>
+	</div>
+<li><a class="logo" href="index.html"></a></li>
+
+ <img src="feed.png" alt="Logo image" id="logo" />
+   
+   
+ <ul class="topnav">
+  <li class="right"><a href="#about">About</a></li>
+  </ul>
+</div>
+
+<body>
+
+</body>
+	
+</html>
