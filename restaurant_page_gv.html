@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+ <html>
+<head>
+<meta charset="UTF-8">
+  <title>AppleBees</title>
+  <!-- added this new bootstrap link-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="r_page_js_gv.js" type="text/javascript"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed...not sure if needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> 
+<style>
+body {margin: 0;}
+ul.topnav {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fffff;
+}
+#nav a
+{
+    font-family: 'Muli', serif;
+	font-size: 30px;
+	display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.dropbtn {
+	display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.topnav li {float: left;}
+ul.topnav li a.active {background-color: #fb6107;}
+ul.topnav li.right {float: right;}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ffba49;
+}
+li.dropdown {
+    display: inline-block;
+}
+#logo { 
+float: left; 
+height: 70px;
+}
+.dropdown-content {
+	display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#nav a:hover 
+{
+opacity:1.0;
+}
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+</style>
+
+</head>
+<body>
+<h1> <center> AppleBees</center> </h1> 
+<ul class="topnav">
+  <li class="dropdown">
+<a href="#" class="dropbtn">Sort Pictures By:</a>
+   <div class="dropdown-content">
+      <a href="#" onclick="sortButtonClicked('low-to-high')">Price - Low to High</a>
+      <a href="#" onclick="sortButtonClicked('high-to-low')">Price - High to Low</a>
+	  <a href="#" onclick="sortButtonClicked('shuffle')">Shuffle!</a>
+	  <a href="#" onclick="sortButtonClicked('rating')">Rating</a>
+	  <a href="#">Most Popular</a>
+    </div>
+</div>  
+
+<div id="dishes">
+
+</div>
+
+</body>
+	
+</html>
