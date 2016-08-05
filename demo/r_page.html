@@ -31,7 +31,7 @@
     <![endif]-->
   <meta charset="utf-8">
 
-  <title>feed</title>
+  <title>Dish of the Week By...</title>
   
   <meta name="viewport" content="width=device-width">
 
@@ -39,9 +39,7 @@
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/modernizr-2.5.3.min.js"></script>
-  
-  <script src="http://www.w3schools.com/lib/w3data.js"></script>
-
+ 
   
 </head>
   
@@ -204,17 +202,48 @@ h3 {
 </header>
 
 <body>
+<nav class="fixed-nav-bar">
 
-<div w3-include-html="header.html"></div>
-
-<script>
-
-w3IncludeHTML();
-</script>
+<div id='nav'>
+<div id="nav-wrapper">
+<ul class="topnav">
+<li><a href="r_page.html"><img src="feed.png" id="implogo" height=80px></a></li>
+  <li><a class="active" href="home.html">Home</a></li>
+  <li class="dropdown">
+<a href="#" class="dropbtn">Sort By...</a>
+   <div class="dropdown-content">
+      <a href="#" onclick="sortButtonClicked('low-to-high')">Price - Low to High</a>
+      <a href="#" onclick="sortButtonClicked('high-to-low')">Price - High to Low</a>
+	  <a href="#" onclick="sortButtonClicked('shuffle')">Shuffle!</a>
+	  <a href="#" onclick="sortButtonClicked('rating')">Rating</a>
+      <a href="#">Most Popular</a>  
+	<div class="dropdown-content"> 
+	  <a href="#">Gluten Free</a>
+	  <a href="#">Dairy Free</a>
+	  <a href="#">Vegan</a>
+	  <a href="#">Vegetarian</a>
+    </div>
+	</div>
+	<li><a href="about.html">About</a></li>
+	<div id="search">
+	<li><input id="search-bar" name="search" type="text" placeholder="Search...">
+      <input id="search-button" name="search_submit" type="submit" value="Search!"></li>
+	<li><a href="r_page.html"><img src="slogan.png" id="implogo" height=80px></a></li>	  
+	 
+	  
+   </div>
+</ul>
+</div>
+</div>
+</nav>
 
 <div id="dishes">
 
 </div> 
+
+<p>
+<h1> <center> Featured Restraunt</center> </h1> 
+</p>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
