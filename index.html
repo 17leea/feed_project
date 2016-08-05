@@ -1,60 +1,52 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Write to a text file</title>
-  <span class="rating">
-    <input type="radio" class="rating-input"
-           id="rating-input-1-5" name="rating-input-1">
-    <label for="rating-input-1-5" class="rating-star">    </label>
-    <input type="radio" class="rating-input"
-           id="rating-input-1-4" name="rating-input-1">
-    <label for="rating-input-1-4" class="rating-star"></label>
-    <input type="radio" class="rating-input"
-           id="rating-input-1-3" name="rating-input-1">
-    <label for="rating-input-1-3" class="rating-star"></label>
-    <input type="radio" class="rating-input"
-           id="rating-input-1-2" name="rating-input-1">
-    <label for="rating-input-1-2" class="rating-star"></label>
-    <input type="radio" class="rating-input"
-           id="rating-input-1-1" name="rating-input-1">
-    <label for="rating-input-1-1" class="rating-star"></label>
-  </span>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Made with Thimble</title>
-  <link rel="stylesheet" href="style.css">
-  <form action="thispage.php" method="post" accept-charset="utf-8">  
-  </form>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Responsive Login Form</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 
-  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
-  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Made with Thimble</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    </head>
-    <body>
-      <style>
-        body {
-          background-color: pink;
-        }
-      </style>
-      <input id="task"><button id="add">Add Review</button>
-      <hr>
-      <div id="todos"></div>
+        <link rel="stylesheet" href="css/style.css">
+	<p style = "position:fixed; top :500px;color:white;padding-left:60px;font-size:60px;"><span>See what you eat, eat what you see...</span></p>
+    
+    
+    
+  </head>
 
-      <script src="todo.js"></script>
-      <script src="script-1.js"></script>
-    </body>
-  </html>
-<body>
+  <body>
+ 
 
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
 
-</body>
+<div class="login">
+  <div class="login-header">
+    <h1>Login</h1>
+  </div>
+  <div class="login-form">
+    <h3>Username:</h3>
+    <input type="text" placeholder="Username"/><br>
+    <h3>Password:</h3>
+    <input type="password" placeholder="Password"/>
+    <br>
+    <input type="button" value="Login" class="login-button"/>
+    <br>
+    <a class="sign-up">Sign Up!</a>
+    <br>
+    <h6 class="no-access">Can't access your account?</h6>
+  </div>
+</div>
+<div class="error-page">
+  <div class="try-again">Error: Try again?</div>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
 </html>
