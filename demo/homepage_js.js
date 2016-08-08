@@ -22,8 +22,8 @@ var dishes = [
     new dish("Title", "7.jpg", "Description", "Ingredients", "#myModal_7", 13.98, 4.0),
     new dish("Title", "8.jpg", "Description", "Ingredients", "#myModal_8", 3.76, 3.0),
     new dish("Title", "9.jpg", "Description", "Ingredients", "#myModal_9", 18.90, 2.0),
-    new dish("Title", "10.png", "Description", "Ingredients", "#myModal_10", 19.40, 1.0),
-    new dish("Title", "11.png", "Description", "Ingredients", "#myModal_11", 6.79, 1.5),
+    new dish("Title", "10.jpg", "Description", "Ingredients", "#myModal_10", 19.40, 1.0),
+    new dish("Title", "11.jpg", "Description", "Ingredients", "#myModal_11", 6.79, 1.5),
 	new dish("Title", "12.jpg", "Description", "Ingredients", "#myModal_12", 8.96, 4.5)
 ];
 
