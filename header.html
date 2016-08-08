@@ -110,7 +110,7 @@ li {
 }
 #nav-wrapper {
     width: 98%;
-	display: inline-block;
+	display: block;
 }
 h1 {
 	font-family: 'Muli', serif;
@@ -136,46 +136,29 @@ h3 {
 	color: #0fa3b1;
 	font-size: 35px;
 	text-align: center;
-}
-btn {
-margin-top: 100px;
-}
-form{
-	width:30px;
-	margin: auto;
-}
-.search { 
-	display: inline-block;
-	margin:15px; 
-	z-index;
-}
-.rounded { 
-	border-radius:15px; 
-	-moz-border-radius:15px; 
-	-webkit-border-radius: 15px; 
-}
-input[type=button], input[type=button]:hover {
-	position: auto; 
-	border:1px solid #adc5cf;
-	background: #e4f1f9;
-	color:#7da2aa;
-}
-.button {
-	background-color: #0fa3b1;
-    border: none;
-    color: white;
-    padding:;
-    font-family: 'Muli', serif;
+	}
+
+#addpic {
+	font-family: 'Muli', serif;
 	font-size: 1.6em;
-    color: black;
 	text-align: center;
-    text-decoration: none;
+	float: right;
     display: inline-block;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-top: 10px;
+	margin-left: auto;
     font-size: 1.6em;
-    margin: 4px 2px;
-    cursor: pointer;
 }
 
+#search {
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+form-wrapper cf.icon {
+	background-color: #ffffff;
+}
 
 
 </style>
@@ -206,10 +189,16 @@ input[type=button], input[type=button]:hover {
 	<li><a href="file:///C:/Users/GWC/Desktop/imn/801Hello/FeedProject/aboutpage.html">About</a></li>
 	<li><a href="#profile">Profile</a></li>
 	<div id="search">
-	<div class="lighter"><form><span><input type="text" class="search rounded" placeholder="Search..."></span></form></div>
+	<container id= "search">
+	<form class="form-wrapper cf">
+		<form action ='./search.php' method='get'>
+        <input type="text" placeholder="" required>
+        <button type="submit"><img class= "icon" src="searchicon.png"></button>
+        </form>
+    </container>
 	
     <div id="addpic">
-	<li><button type="button" class="button" data-toggle="modal" data-target="#myModal">Add Picture</button></li></div></ul>
+	<button type="button" class="button" data-toggle="modal" data-target="#myModal">Add Picture</button></div></ul>
 	
 	
       <!-- Modal -->
