@@ -12,7 +12,7 @@ function dish(title, imageURL, description, ingredients, price, rating) {
 // A list of all dishes.
 var dishes = [
     // Each of these lines of code makes a new dish object from the dish class
-    new dish("Title", "images/1.jpg", "Description", "Ingredients", 12.99, 4.5),
+    new dish("Title", "images/1.jpg", "Description", "Ingredients", 12.45, 4.5),
     new dish("Title", "images/2.jpg", "Description", "Ingredients", 4.87, 4.0),
     new dish("Title", "images/3.jpg", "Description", "Ingredients", 15.65, 3.5),
     new dish("Title", "images/4.jpg", "Description", "Ingredients", 2.89, 4.3),
@@ -28,6 +28,26 @@ var dishes = [
 	new dish("Title", "images/15.jpg", "Description", "Ingredients", 4.96, 5.0),
 	new dish("Title", "images/16.jpg", "Description", "Ingredients", 5.30, 4.9),
 ]
+
+function showdishes(dishes) {
+    $(" #dishes ").empty(); // A jQuery method which clears the dishes div
+    for (var i = 0; i < dishes.length; i++) {
+
+        if(i%3==0) {
+            $(" #dishes ").append("<div class='row'></div>"); // A jQuery method to add a new row for every 3rd dish
+        }
+		// This string is the HTML that makes up each individual dish cell,
+        // It uses dish[i] attributes so that each cell has unique information
+        var dishHTML = "<div class='col-md-4 dish'>" +"<a href="#myModal" role="button" data-toggle="modal"></a>"+
+ //           "<img class='dishimage' src='" + dishes[i].imageURL + "' />" +
+ //           "<h3 class='dishname'>" + dishes[i].title + " (" + dishes[i].price + ")</h3>" +
+	//"<p class='description'>" + dishes[i].description + " ("+ dishes[i]. rating + ")</p>";
+
+     //   $(" #dishes .row:last-child").append(dishHTML); // A jQuery method that adds the new HTML string to the last row in the movies div
+
+      //  if(i%3==2) { $(" #dishes ").append("</div>"); }
+    }
+}
 
 /* sortButtonClicked
     Calls appropriate sort method based on which link was clicked and
@@ -48,7 +68,8 @@ function sortButtonClicked(link) {
 	else if (link== "rating"){
 		sortrating(dishes)
 	}
-
+    showdishes(dishes);
+}
 
 /* shuffle
    Input: Array
@@ -125,3 +146,9 @@ function sortrating(o) {
    // alert("You have to sort the dishes by rating!");
     return o;
 }
+
+// Code that gets run once the page has loaded. It also uses jQuery.
+$(document).ready(function () {
+    shuffle(dishes);
+    showdishes(dishes);
+});
