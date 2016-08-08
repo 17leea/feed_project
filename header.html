@@ -140,19 +140,14 @@ h3 {
 btn {
 margin-top: 100px;
 }
-
-#addpic {
-	font-family: 'Muli', serif;
-	font-size: 1.6em;
-    color: black;
-    text-align: center;
-}
 form{
 	width:30px;
 	margin: auto;
 }
 .search { 
+	display: inline-block;
 	margin:15px; 
+	z-index;
 }
 .rounded { 
 	border-radius:15px; 
@@ -164,6 +159,21 @@ input[type=button], input[type=button]:hover {
 	border:1px solid #adc5cf;
 	background: #e4f1f9;
 	color:#7da2aa;
+}
+.button {
+	background-color: #0fa3b1;
+    border: none;
+    color: white;
+    padding:;
+    font-family: 'Muli', serif;
+	font-size: 1.6em;
+    color: black;
+	text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6em;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
 
@@ -194,10 +204,14 @@ input[type=button], input[type=button]:hover {
 	</div>
 	</li>
 	<li><a href="file:///C:/Users/GWC/Desktop/imn/801Hello/FeedProject/aboutpage.html">About</a></li>
+	<li><a href="#profile">Profile</a></li>
 	<div id="search">
-	<div class="lighter"><form><span><input type="text" class="search rounded" placeholder="Search..."></span></form>
-    <div id="addpic"><li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Picture</button></div>
-	</li></ul>
+	<div class="lighter"><form><span><input type="text" class="search rounded" placeholder="Search..."></span></form></div>
+	
+    <div id="addpic">
+	<li><button type="button" class="button" data-toggle="modal" data-target="#myModal">Add Picture</button></li></div></ul>
+	
+	
       <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
