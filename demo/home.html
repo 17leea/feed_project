@@ -46,9 +46,7 @@
 </head>
   
 <style>
-
 body {margin: 0;}
-
 ul.topnav {
 	list-style-type: none;
     margin: auto;
@@ -56,8 +54,6 @@ ul.topnav {
     overflow: show;
     background-color: #fffff;
 }
-
-
 #nav a
 {
     font-family: 'Muli', serif;
@@ -68,7 +64,6 @@ ul.topnav {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 .dropbtn {
 	display: inline-block;
     color: black;
@@ -76,27 +71,19 @@ ul.topnav {
     padding: 14px 16px;
     text-decoration: none;
 }
-
 ul.topnav li {float: left;}
-
-
 ul.topnav li a.active {background-color: #fb6107;}
-
 ul.topnav li.right {float: right;}
-
 li a:hover, .dropdown:hover .dropbtn {
     background-color: #ffba49;
 }
-
 li.dropdown {
     display: inline-block;
 }
-
 #logo { 
 float: left; 
 height: 70px;
 }
-
 .dropdown-content {
 	display: none;
     position: absolute;
@@ -104,7 +91,6 @@ height: 70px;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
-
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -112,18 +98,14 @@ height: 70px;
     display: block;
     text-align: left;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 @media screen and (max-width: 600px){
     ul.topnav li.right,
     ul.topnav li {float: none;}
 }
-
 img {
     display: block;
     margin: 0 auto;
@@ -143,14 +125,11 @@ img {
   float: left;
   margin: auto;
 } 
-
 li {
 	display: inline;
 	padding: 15px:
 }
-
 #implogo { float: left; }
-
 #impslogan { float: right; }
    
 .ui-fixed-nav-bar #search-bar:before {
@@ -169,7 +148,6 @@ li {
     width: 90%;
 	display: inline-block;
 }
-
 h1 {
 	font-family: 'Muli', serif;
 	color: black;
@@ -195,7 +173,6 @@ h3 {
 	font-size: 35px;
 	text-align: center;
 }
-
 </style>
 </head>
 
@@ -208,13 +185,10 @@ h3 {
 <div w3-include-html="header.html"></div>
 
 <script>
-
 w3IncludeHTML();
 </script>
 
-<div id="dishes">
 
-</div> 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -222,8 +196,9 @@ w3IncludeHTML();
     <script src="js/bootstrap.min.js"></script>
   
   <div id="content" class="container clearfix">
-    
-    <div class="item">
+  
+ <div id="dishes"></div>
+<!-- <div class="item">
     <a href="#myModal_1" role="button" data-toggle="modal">
     <img src="1.jpg"></a>
     </div>
@@ -275,16 +250,16 @@ w3IncludeHTML();
     
     <div class="item">
 	<a href="#myModal_11" role="button" data-toggle="modal">
-      <img src="11.png" alt="" /></a>
+      <img src="11.jpg" alt="" /></a>
     </div>
     
     <div class="item">
 	<a href="#myModal_12" role="button" data-toggle="modal">
-      <img src="12.png" alt="" /></a>
+      <img src="12.jpg" alt=""  /></a>
     </div>
-    
+     -->
   </div>
-  
+
     <!-- Modal -->
 <div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
@@ -320,7 +295,6 @@ w3IncludeHTML();
 	  
       <form action="thispage.php" method="post" accept-charset="utf-8">  
   </form>
-
   <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
   <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
         </div>
@@ -430,7 +404,6 @@ w3IncludeHTML();
 	  
       <form action="thispage.php" method="post" accept-charset="utf-8">  
   </form>
-
   <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
   <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
         </div>
@@ -540,7 +513,6 @@ w3IncludeHTML();
 	  
       <form action="thispage.php" method="post" accept-charset="utf-8">  
   </form>
-
   <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
   <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
         </div>
@@ -650,7 +622,6 @@ w3IncludeHTML();
 	  
       <form action="thispage.php" method="post" accept-charset="utf-8">  
   </form>
-
   <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
   <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
         </div>
@@ -760,7 +731,6 @@ w3IncludeHTML();
 	  
       <form action="thispage.php" method="post" accept-charset="utf-8">  
   </form>
-
   <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
   <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
         </div>
@@ -870,7 +840,6 @@ w3IncludeHTML();
 	  
       <form action="thispage.php" method="post" accept-charset="utf-8">  
   </form>
-
   <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
   <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
         </div>
