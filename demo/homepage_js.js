@@ -24,25 +24,29 @@ var dishes = [
     new dish("Title", "9.jpg", "Description", "Ingredients", "#myModal_9", 18.90, 2.0),
     new dish("Title", "10.png", "Description", "Ingredients", "#myModal_10", 19.40, 1.0),
     new dish("Title", "11.png", "Description", "Ingredients", "#myModal_11", 6.79, 1.5),
-	new dish("Title", "12.jpg", "Description", "Ingredients", "#myModal_12", 8.96, 4.5),
+	new dish("Title", "12.jpg", "Description", "Ingredients", "#myModal_12", 8.96, 4.5)
+];
+
 
 function showdishes(dishes) {
-    $(" #dishes ").empty(); // A jQuery method which clears the dishes div
+   $(" #dishes ").empty(); // A jQuery method which clears the dishes div
     for (var i = 0; i < dishes.length; i++) {
 
-        if(i%3==0) {
+       if(i%3==0) {
             $(" #dishes ").append("<div class='row'></div>"); // A jQuery method to add a new row for every 3rd dish
         }
 		// This string is the HTML that makes up each individual dish cell,
         // It uses dish[i] attributes so that each cell has unique information
-        var dishHTML = "<div class='col-md-4 dish'>" + "<a href= src='" + dishes[i].modal role="button" data-toggle="modal"></a>" +
-    //        "<img class='dishimage' src='" + dishes[i].imageURL + "' />" +
- //           "<h3 class='dishname'>" + dishes[i].title + " (" + dishes[i].price + ")</h3>" +
-	//"<p class='description'>" + dishes[i].description + " ("+ dishes[i]. rating + ")</p>";
+   /*     var dishHTML ="<div class='col-md-4 dish'>" +"<a href='" + dishes[i].modal +"'role="button" data-toggle="modal">"+
+            "<img class='dishimage' src=" + dishes[i].imageURL + " /></a>" ;*/
+			
+			
+			
+			
+		var dishHTML = "<div class = 'item'> <a href="+ dishes[i].modal+" role = 'button' data-toggle = 'modal'><img src ="+dishes[i].imageURL+"/></a></div>";
+        $(" #dishes .row:last-child").append(dishHTML); // A jQuery method that adds the new HTML string to the last row in the movies div
 
-     //   $(" #dishes .row:last-child").append(dishHTML); // A jQuery method that adds the new HTML string to the last row in the movies div
-
-      //  if(i%3==2) { $(" #dishes ").append("</div>"); }
+        if(i%3==2) { $(" #dishes ").append("</div>"); }
     }
 }
 
@@ -60,10 +64,10 @@ function sortButtonClicked(link) {
         sortdisheshightolow(dishes);
     }
 	else if (link== "shuffle"){
-		shuffle(dishes)
+		shuffle(dishes);
 	}
 	else if (link== "rating"){
-		sortrating(dishes)
+		sortrating(dishes);
 	}
     showdishes(dishes);
 }
