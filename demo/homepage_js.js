@@ -1,33 +1,30 @@
 // This is the new way of creating JavaScript classes. It's not really a function.
-function dish(title, imageURL, description, ingredients, price, rating) {
+function dish(title, imageURL, description, ingredients, modal, price, rating) {
     this.title = title;
 	this.imageURL = imageURL;
     this.description = description;
 	this.ingredients = ingredients;
+	this.modal = modal;
 	this.price = price;
-	this.rating = rating
+	this.rating = rating;
 
 }
 
 // A list of all dishes.
 var dishes = [
     // Each of these lines of code makes a new dish object from the dish class
-    new dish("Title", "images/1.jpg", "Description", "Ingredients", 12.45, 4.5),
-    new dish("Title", "images/2.jpg", "Description", "Ingredients", 4.87, 4.0),
-    new dish("Title", "images/3.jpg", "Description", "Ingredients", 15.65, 3.5),
-    new dish("Title", "images/4.jpg", "Description", "Ingredients", 2.89, 4.3),
-    new dish("Title", "images/5.jpg", "Description", "Ingredients", 4.56, 3.5),
-    new dish("Title", "images/7.jpg", "Description", "Ingredients", 13.98, 5.0),
-    new dish("Title", "images/8.jpg", "Description", "Ingredients", 3.76, 4.0),
-    new dish("Title", "images/9.jpg", "Description", "Ingredients", 18.90, 3.0),
-    new dish("Title", "images/10.jpg", "Description", "Ingredients", 19.40, 2.0),
-    new dish("Title", "images/11.png", "Description", "Ingredients", 6.79, 1.0),
-    new dish("Title", "images/12.png", "Description", "Ingredients", 8.96, 1.5),
-	new dish("Title", "images/13.jpg", "Description", "Ingredients", 18.96, 4.5),
-	new dish("Title", "images/14.jpg", "Description", "Ingredients", 16.60, 4.5),
-	new dish("Title", "images/15.jpg", "Description", "Ingredients", 4.96, 5.0),
-	new dish("Title", "images/16.jpg", "Description", "Ingredients", 5.30, 4.9),
-]
+    new dish("Title", "1.jpg", "Description", "Ingredients", "#myModal_1", 12.45, 4.5),
+    new dish("Title", "2.jpg", "Description", "Ingredients", "#myModal_2", 4.87, 4.0),
+    new dish("Title", "3.jpg", "Description", "Ingredients", "#myModal_3", 15.65, 3.5),
+    new dish("Title", "4.jpg", "Description", "Ingredients", "#myModal_4", 2.89, 4.3),
+    new dish("Title", "5.jpg", "Description", "Ingredients", "#myModal_5", 4.56, 3.5),
+    new dish("Title", "6.jpg", "Description", "Ingredients", "#myModal_6", 1.90, 5.0),
+    new dish("Title", "7.jpg", "Description", "Ingredients", "#myModal_7", 13.98, 4.0),
+    new dish("Title", "8.jpg", "Description", "Ingredients", "#myModal_8", 3.76, 3.0),
+    new dish("Title", "9.jpg", "Description", "Ingredients", "#myModal_9", 18.90, 2.0),
+    new dish("Title", "10.png", "Description", "Ingredients", "#myModal_10", 19.40, 1.0),
+    new dish("Title", "11.png", "Description", "Ingredients", "#myModal_11", 6.79, 1.5),
+	new dish("Title", "12.jpg", "Description", "Ingredients", "#myModal_12", 8.96, 4.5),
 
 function showdishes(dishes) {
     $(" #dishes ").empty(); // A jQuery method which clears the dishes div
@@ -38,8 +35,8 @@ function showdishes(dishes) {
         }
 		// This string is the HTML that makes up each individual dish cell,
         // It uses dish[i] attributes so that each cell has unique information
-        var dishHTML = "<div class='col-md-4 dish'>" +"<a href="#myModal" role="button" data-toggle="modal"></a>"+
- //           "<img class='dishimage' src='" + dishes[i].imageURL + "' />" +
+        var dishHTML = "<div class='col-md-4 dish'>" + "<a href= src='" + dishes[i].modal role="button" data-toggle="modal"></a>" +
+    //        "<img class='dishimage' src='" + dishes[i].imageURL + "' />" +
  //           "<h3 class='dishname'>" + dishes[i].title + " (" + dishes[i].price + ")</h3>" +
 	//"<p class='description'>" + dishes[i].description + " ("+ dishes[i]. rating + ")</p>";
 

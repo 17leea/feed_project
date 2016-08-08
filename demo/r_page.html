@@ -252,42 +252,49 @@ h3 {
   <div id="content" class="container clearfix">
     
     <div class="item">
-    <a href="#myModal" role="button" data-toggle="modal">
+    <a href="#myModal_1" role="button" data-toggle="modal">
     <img src="1.jpg"></a>
     </div>
     
     <div class="item">
-      <img src="17.jpg" alt="" />
+	<a href="#myModal_17" role="button" data-toggle="modal">
+      <img src="17.jpg" alt="" /></a>
     </div>
     
     <div class="item featured">
-      <img src="18.jpg" alt="" />
+	<a href="#myModal_18" role="button" data-toggle="modal">
+      <img src="18.jpg" alt="" /></a>
     </div>
     
     <div class="item">
-      <img src="19.jpg" alt="" />
+	<a href="#myModal_19" role="button" data-toggle="modal">
+      <img src="19.jpg" alt="" /></a>
     </div>
     
     <div class="item">
-      <img src="20.jpg" alt="" />
+	<a href="#myModal_20" role="button" data-toggle="modal">
+      <img src="20.jpg" alt="" /></a>
     </div>
     
     <div class="item featured">
-      <img src="21.jpg" alt="" />
+	<a href="#myModal_21" role="button" data-toggle="modal">
+      <img src="21.jpg" alt="" /></a>
     </div>
     
     <div class="item">
-      <img src="22.jpg" alt="" />
+	<a href="#myModal_22" role="button" data-toggle="modal">
+      <img src="22.jpg" alt="" /></a>
     </div>
     
     <div class="item">
-      <img src="23.jpg" alt="" />
+	<a href="#myModal_23" role="button" data-toggle="modal">
+      <img src="23.jpg" alt="" /></a>
     </div>
     
   </div>
   
     <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal fade" id="myModal_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -301,6 +308,391 @@ h3 {
         <div id = "modal-text">
         <p align = "left">Location</p><br>
         <p align = "left">Dish price: $12.45</p><br>
+      <span class="rating">
+        <input type="radio" class="rating-input"
+               id="rating-input-1-5" name="rating-input-1">
+        <label for="rating-input-1-5" class="rating-star">    </label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-4" name="rating-input-1">
+        <label for="rating-input-1-4" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-3" name="rating-input-1">
+        <label for="rating-input-1-3" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-2" name="rating-input-1">
+        <label for="rating-input-1-2" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-1" name="rating-input-1">
+        <label for="rating-input-1-1" class="rating-star"></label>
+      </span>
+	  
+      <form action="thispage.php" method="post" accept-charset="utf-8">  
+  </form>
+
+  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
+  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Board 1</a></li>
+        <li><a href="#">Board 2</a></li>
+        <li><a href="#">Board 3</a></li>
+      </ul>
+    </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal_17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dish Title</h4>
+      </div>
+      <div class="modal-body">
+        <div id = "modal-image">
+        <img src="17.jpg" alt="Mountain View" style="width:304px;height:228px;"float:left">
+        </div>
+        <div id = "modal-text">
+        <p align = "left">Location</p><br>
+        <p align = "left">Dish price: $13.45</p><br>
+      <span class="rating">
+        <input type="radio" class="rating-input"
+               id="rating-input-1-5" name="rating-input-1">
+        <label for="rating-input-1-5" class="rating-star">    </label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-4" name="rating-input-1">
+        <label for="rating-input-1-4" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-3" name="rating-input-1">
+        <label for="rating-input-1-3" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-2" name="rating-input-1">
+        <label for="rating-input-1-2" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-1" name="rating-input-1">
+        <label for="rating-input-1-1" class="rating-star"></label>
+      </span>
+	  
+      <form action="thispage.php" method="post" accept-charset="utf-8">  
+  </form>
+
+  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
+  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Board 1</a></li>
+        <li><a href="#">Board 2</a></li>
+        <li><a href="#">Board 3</a></li>
+      </ul>
+    </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal_18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dish Title</h4>
+      </div>
+      <div class="modal-body">
+        <div id = "modal-image">
+        <img src="18.jpg" alt="Mountain View" style="width:304px;height:228px;"float:left">
+        </div>
+        <div id = "modal-text">
+        <p align = "left">Location</p><br>
+        <p align = "left">Dish price: $7.98</p><br>
+      <span class="rating">
+        <input type="radio" class="rating-input"
+               id="rating-input-1-5" name="rating-input-1">
+        <label for="rating-input-1-5" class="rating-star">    </label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-4" name="rating-input-1">
+        <label for="rating-input-1-4" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-3" name="rating-input-1">
+        <label for="rating-input-1-3" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-2" name="rating-input-1">
+        <label for="rating-input-1-2" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-1" name="rating-input-1">
+        <label for="rating-input-1-1" class="rating-star"></label>
+      </span>
+	  
+      <form action="thispage.php" method="post" accept-charset="utf-8">  
+  </form>
+
+  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
+  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Board 1</a></li>
+        <li><a href="#">Board 2</a></li>
+        <li><a href="#">Board 3</a></li>
+      </ul>
+    </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal_19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dish Title</h4>
+      </div>
+      <div class="modal-body">
+        <div id = "modal-image">
+        <img src="19.jpg" alt="Mountain View" style="width:304px;height:228px;"float:left">
+        </div>
+        <div id = "modal-text">
+        <p align = "left">Location</p><br>
+        <p align = "left">Dish price: $10.76</p><br>
+      <span class="rating">
+        <input type="radio" class="rating-input"
+               id="rating-input-1-5" name="rating-input-1">
+        <label for="rating-input-1-5" class="rating-star">    </label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-4" name="rating-input-1">
+        <label for="rating-input-1-4" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-3" name="rating-input-1">
+        <label for="rating-input-1-3" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-2" name="rating-input-1">
+        <label for="rating-input-1-2" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-1" name="rating-input-1">
+        <label for="rating-input-1-1" class="rating-star"></label>
+      </span>
+	  
+      <form action="thispage.php" method="post" accept-charset="utf-8">  
+  </form>
+
+  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
+  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Board 1</a></li>
+        <li><a href="#">Board 2</a></li>
+        <li><a href="#">Board 3</a></li>
+      </ul>
+    </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal_20" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dish Title</h4>
+      </div>
+      <div class="modal-body">
+        <div id = "modal-image">
+        <img src="20.jpg" alt="Mountain View" style="width:304px;height:228px;"float:left">
+        </div>
+        <div id = "modal-text">
+        <p align = "left">Location</p><br>
+        <p align = "left">Dish price: $4.98</p><br>
+      <span class="rating">
+        <input type="radio" class="rating-input"
+               id="rating-input-1-5" name="rating-input-1">
+        <label for="rating-input-1-5" class="rating-star">    </label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-4" name="rating-input-1">
+        <label for="rating-input-1-4" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-3" name="rating-input-1">
+        <label for="rating-input-1-3" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-2" name="rating-input-1">
+        <label for="rating-input-1-2" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-1" name="rating-input-1">
+        <label for="rating-input-1-1" class="rating-star"></label>
+      </span>
+	  
+      <form action="thispage.php" method="post" accept-charset="utf-8">  
+  </form>
+
+  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
+  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Board 1</a></li>
+        <li><a href="#">Board 2</a></li>
+        <li><a href="#">Board 3</a></li>
+      </ul>
+    </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal_21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dish Title</h4>
+      </div>
+      <div class="modal-body">
+        <div id = "modal-image">
+        <img src="21.jpg" alt="Mountain View" style="width:304px;height:228px;"float:left">
+        </div>
+        <div id = "modal-text">
+        <p align = "left">Location</p><br>
+        <p align = "left">Dish price: $18.97</p><br>
+      <span class="rating">
+        <input type="radio" class="rating-input"
+               id="rating-input-1-5" name="rating-input-1">
+        <label for="rating-input-1-5" class="rating-star">    </label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-4" name="rating-input-1">
+        <label for="rating-input-1-4" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-3" name="rating-input-1">
+        <label for="rating-input-1-3" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-2" name="rating-input-1">
+        <label for="rating-input-1-2" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-1" name="rating-input-1">
+        <label for="rating-input-1-1" class="rating-star"></label>
+      </span>
+	  
+      <form action="thispage.php" method="post" accept-charset="utf-8">  
+  </form>
+
+  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
+  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Board 1</a></li>
+        <li><a href="#">Board 2</a></li>
+        <li><a href="#">Board 3</a></li>
+      </ul>
+    </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal_22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dish Title</h4>
+      </div>
+      <div class="modal-body">
+        <div id = "modal-image">
+        <img src="22.jpg" alt="Mountain View" style="width:304px;height:228px;"float:left">
+        </div>
+        <div id = "modal-text">
+        <p align = "left">Location</p><br>
+        <p align = "left">Dish price: $16.45</p><br>
+      <span class="rating">
+        <input type="radio" class="rating-input"
+               id="rating-input-1-5" name="rating-input-1">
+        <label for="rating-input-1-5" class="rating-star">    </label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-4" name="rating-input-1">
+        <label for="rating-input-1-4" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-3" name="rating-input-1">
+        <label for="rating-input-1-3" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-2" name="rating-input-1">
+        <label for="rating-input-1-2" class="rating-star"></label>
+        <input type="radio" class="rating-input"
+               id="rating-input-1-1" name="rating-input-1">
+        <label for="rating-input-1-1" class="rating-star"></label>
+      </span>
+	  
+      <form action="thispage.php" method="post" accept-charset="utf-8">  
+  </form>
+
+  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
+  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="dropdown">
+      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-plus"></span> Add
+      <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Board 1</a></li>
+        <li><a href="#">Board 2</a></li>
+        <li><a href="#">Board 3</a></li>
+      </ul>
+    </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModal_23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Dish Title</h4>
+      </div>
+      <div class="modal-body">
+        <div id = "modal-image">
+        <img src="23.jpg" alt="Mountain View" style="width:304px;height:228px;"float:left">
+        </div>
+        <div id = "modal-text">
+        <p align = "left">Location</p><br>
+        <p align = "left">Dish price: $12.67</p><br>
       <span class="rating">
         <input type="radio" class="rating-input"
                id="rating-input-1-5" name="rating-input-1">
