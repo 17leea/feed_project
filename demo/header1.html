@@ -1,25 +1,23 @@
 <!DOCTYPE html>
- <html>
+ <html class="no-js" lang="en">
 <head>
 <meta charset="UTF-8">
   <title>feed</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="sort_menu_js.js" type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-  
+ 
 <style>
 
-body {
-margin: 0;
-padding-top: 100px;
-}
+body {margin: 0;}
 
 ul.topnav {
 	list-style-type: none;
     margin: auto;
     padding: 0;
-    overflow: hidden;
+    overflow: show;
     background-color: #fffff;
 }
 
@@ -90,7 +88,7 @@ height: 70px;
     ul.topnav li {float: none;}
 }
 
-#implogo {
+img {
     display: block;
     margin: 0 auto;
 	height: 50px;
@@ -116,12 +114,13 @@ li {
 }
 
 #implogo { float: left; }
+
    
 .ui-fixed-nav-bar #search-bar:before {
 	content: "";
     z-index: 1;
     position: absolute;
-    top: 1.05em;
+    top: 4.05em;
     margin-left: 0.5em;
     height: 30px;
     width: 15px;
@@ -133,14 +132,16 @@ li {
     width: 90%;
 	display: inline-block;
 }
-#group {
-    float: right;
-    margin: 0px 0px 15px 20px;
-	padding-right: 50px;
-}
+
 h1 {
 	font-family: 'Muli', serif;
 	color: black;
+	font-size: 50px;
+	text-align: left;
+}
+h4 {
+	font-family: 'Muli', serif;
+	color: #ff1032;
 	font-size: 50px;
 	text-align: left;
 }
@@ -157,21 +158,20 @@ h3 {
 	font-size: 35px;
 	text-align: center;
 }
+btn {
+margin-top: 100px;
+}
 
 </style>
-</head>
-
-<header>
-
-</header>
-
+</head> 
+  
 <nav class="fixed-nav-bar">
 
 <div id='nav'>
 <div id="nav-wrapper">
 <ul class="topnav">
 <li><a href="r_page.html"><img src="feed.png" id="implogo" height=80px></a></li>
-  <li><a href="home.html">Home</a></li>
+  <li><a class="active" href="home.html">Home</a></li>
   <li class="dropdown">
 <a href="#" class="dropbtn">Sort By...</a>
    <div class="dropdown-content">
@@ -186,30 +186,42 @@ h3 {
 	  <a href="#">Vegetarian</a>
     </div>
 	</div>
-	<li><a class="active" href="#about">About</a></li>
+	<li><a href="about.html">About</a></li>
 	<div id="search">
 	<li><input id="search-bar" name="search" type="text" placeholder="Search...">
       <input id="search-button" name="search_submit" type="submit" value="Search!"></li>
 	<li><a href="r_page.html"><img src="slogan1.png" id="implogo" height=80px></a></li> 
+    <li><button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Picture</button>
+	  
+      <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Upload a Picture</h4>
+      </div>
+      <div class="modal-body">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+      </span>
+      <form action="thispage.php" method="post" accept-charset="utf-8">  
+  </form>
+  <input type="hidden" name="product_type" value="actual_product_type" id="product_type">
+  <input type="hidden" name="product_id" value="actual_product_id" id="product_id">
+        </div>
+      </div>
+      <div class="modal-footer">
+        
+      </div>
+    </div>
+  </div>
+</div>
    </div>
 </ul>
 </div>
 </div>
 </nav>
-
-
-
-<body>
-
-<p> <img src="group_picture.jpg" id="group" width=40%>
-<h1><center>About feed</h1>
-<h2>    feed was created as a final project for a Girls Who Code Immersion Program. Created by Alicia, Egypt, Kelli, Isabela, and Yingquin in August of 2016 at Akamai in Cambridge, Massachusetts. </h2><h2> Using HTML, CSS, and JavaScript, feed is a website that showcases a lot of the skills each girl learned throughout the 7-week program.</h2> 
-
-<p><h3>"With the importance of visual appeal at the forefront of our minds, we wanted to create an easy way for people to find food they will love." -Isabela </h3></p>
-
-</p>
-
-   
-</body>
-	
-</html>

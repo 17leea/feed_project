@@ -20,8 +20,8 @@ var dishes = [
     new dish("Title", "20.jpg", "Description", "Ingredients", "#myModal_20", 4.98, 3.5),
     new dish("Title", "21.jpg", "Description", "Ingredients", "#myModal_21", 18.97, 5.0),
     new dish("Title", "22.jpg", "Description", "Ingredients", "#myModal_22", 16.45, 4.0),
-    new dish("Title", "23.jpg", "Description", "Ingredients", "#myModal_23", 12.67, 3.0),
-
+    new dish("Title", "23.jpg", "Description", "Ingredients", "#myModal_23", 12.67, 3.0)
+];
 
 function showdishes(dishes) {
    $(" #dishes ").empty(); // A jQuery method which clears the dishes div
