@@ -14,18 +14,13 @@ function dish(title, imageURL, description, ingredients, modal, price, rating) {
 var dishes = [
     // Each of these lines of code makes a new dish object from the dish class
     new dish("Title", "1.jpg", "Description", "Ingredients", "#myModal_1", 12.45, 4.5),
-    new dish("Title", "2.jpg", "Description", "Ingredients", "#myModal_2", 4.87, 4.0),
-    new dish("Title", "3.jpg", "Description", "Ingredients", "#myModal_3", 15.65, 3.5),
-    new dish("Title", "4.jpg", "Description", "Ingredients", "#myModal_4", 2.89, 4.3),
-    new dish("Title", "5.jpg", "Description", "Ingredients", "#myModal_5", 4.56, 3.5),
-    new dish("Title", "6.jpg", "Description", "Ingredients", "#myModal_6", 1.90, 5.0),
-    new dish("Title", "7.jpg", "Description", "Ingredients", "#myModal_7", 13.98, 4.0),
-    new dish("Title", "8.jpg", "Description", "Ingredients", "#myModal_8", 3.76, 3.0),
-    new dish("Title", "9.jpg", "Description", "Ingredients", "#myModal_9", 18.90, 2.0),
-    new dish("Title", "10.jpg", "Description", "Ingredients", "#myModal_10", 19.40, 1.0),
-    new dish("Title", "11.jpg", "Description", "Ingredients", "#myModal_11", 6.79, 1.5),
-	new dish("Title", "12.jpg", "Description", "Ingredients", "#myModal_12", 8.96, 4.5)
-];
+    new dish("Title", "17.jpg", "Description", "Ingredients", "#myModal_17", 13.45, 4.0),
+    new dish("Title", "18.jpg", "Description", "Ingredients", "#myModal_18", 7.98, 3.5),
+    new dish("Title", "19.jpg", "Description", "Ingredients", "#myModal_19", 10.76, 4.3),
+    new dish("Title", "20.jpg", "Description", "Ingredients", "#myModal_20", 4.98, 3.5),
+    new dish("Title", "21.jpg", "Description", "Ingredients", "#myModal_21", 18.97, 5.0),
+    new dish("Title", "22.jpg", "Description", "Ingredients", "#myModal_22", 16.45, 4.0),
+    new dish("Title", "23.jpg", "Description", "Ingredients", "#myModal_23", 12.67, 3.0),
 
 
 function showdishes(dishes) {
@@ -39,9 +34,6 @@ function showdishes(dishes) {
         // It uses dish[i] attributes so that each cell has unique information
    /*     var dishHTML ="<div class='col-md-4 dish'>" +"<a href='" + dishes[i].modal +"'role="button" data-toggle="modal">"+
             "<img class='dishimage' src=" + dishes[i].imageURL + " /></a>" ;*/
-			
-			
-			
 			
 		var dishHTML = "<div class = 'item'> <a href="+ dishes[i].modal+" role = 'button' data-toggle = 'modal'><img src ="+dishes[i].imageURL+"/></a></div>";
         $(" #dishes .row:last-child").append(dishHTML); // A jQuery method that adds the new HTML string to the last row in the movies div
