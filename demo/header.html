@@ -138,28 +138,12 @@ h3 {
 	text-align: center;
 	}
 
-.button {
-	font-family: 'Muli', serif;
-	font-size: 1.6em;
-	text-align: center;
-    display: inline-block;
-	margin-right: auto;
-	position: relative;
-	top: 12px;
-	color: black;
-	padding: 2px 5px;
-	margin: auto;
-    font-size: 1.6em;
-	margin: 0 auto;
-	float: right;
-	background-color: #d6ff79;
-}
-
 .search {
 	display: inline-block;
 	margin-right: auto;
 	margin-left: auto;
 }
+
 form-wrapper cf.icon {
 	background-color: #ffffff;
 }
@@ -168,9 +152,14 @@ form-wrapper cf.icon {
 	-moz-border-radius:15px; 
 	-webkit-border-radius:15px;
 }
-.login {
-	background-color: #1EC6D6;
-}
+#addpic1 {
+	background-color: #2AC3D1;
+	float: right;
+	}
+#login1 {
+	background-color: #d6ff79;
+	float: right;
+	}
 
 </style>
 </head> 
@@ -182,13 +171,15 @@ form-wrapper cf.icon {
 <ul class="topnav">
 <li><a href="r_page.html"><img src="feed.png" id="implogo" height=80px></a></li>
   <li><a class="active" href="home.html">Home</a></li>
+  
   <li class="dropdown">
-<a href="#" class="dropbtn">Sort By...</a>
+	<a href="#" class="dropbtn">Sort By...</a>
    <div class="dropdown-content">
       <a href="#" onclick="sortButtonClicked('low-to-high')">Price - Low to High</a>
       <a href="#" onclick="sortButtonClicked('high-to-low')">Price - High to Low</a>
-	  <a href="#" onclick="sortButtonClicked('shuffle')">Shuffle!</a>
-      <a href="#">Location</a> 	  
+		<a href="#" onclick="sortButtonClicked('shuffle')">Shuffle!</a>
+      <a href="#">Location</a> 
+	  
 	<div class="dropdown-content"> 
 	  <a href="#">Gluten Free</a>
 	  <a href="#">Dairy Free</a>
@@ -197,18 +188,6 @@ form-wrapper cf.icon {
     </div>
 	</div>
 	</li>
-	<li><a href="about.html">About</a></li>
-	<li class = "dropdown">
-<a href="#profile" class="dropbtn">Profile</a>
-	<div class="dropdown-content">
-      <a href="profile.html">My Pictures</a>
-      <a href="#">Create New Collection</a>
-      <a href="brunch.html">Brunch</a>
-      <a href="lunch.html">Lunch Eats</a>
-      <a href="dinner.html">Dinner Noms</a>
-	</div>
-	
-	
 	<div id="search">
 	<container id= "search">
 	<li><form class="search rounded">
@@ -217,8 +196,11 @@ form-wrapper cf.icon {
         <button type="submit"><img class= "icon" src="searchicon.png"></button>
         </span></form></div></li>
     </container>
-	<button type="button addpic" class="button" data-toggle="modal" data-target="#myModal">Add Picture</button>
-	<button class="button login">Log In</button></div></li> 
+	<li><a href="file:///C:/Users/GWC/Desktop/imn/801Hello/FeedProject/aboutpage.html">About</a></li>
+	<li><a href="#profile">My Profile</a></li>
+	<div id="addpic1"><li><a type="button addpic" data-toggle="modal" data-target="#myModal">Add Picture</a></li></div>
+	<div id="login1"><li><a type="button login" href="#login">Log In</a></li></div> 
+	
 	
 	</ul>
 	
